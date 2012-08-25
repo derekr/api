@@ -217,7 +217,7 @@ Window.prototype.buttons = function() {
 };
 Window.prototype.setButtons = function(newButtons) {
     
-    throw_ifnot_array(newTitle, "newButtons of setButtons");
+    throw_ifnot_array(newButtons, "newButtons of setButtons");
     
     objc_msgSend(this.nid, "setButtons:", newButtons);
 };
